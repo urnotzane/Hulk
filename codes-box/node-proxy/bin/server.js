@@ -12,10 +12,6 @@ const compiler = webpack(config);
 const webpackDevServer = webpackDevMiddleware(compiler, {
   publicPath: config.output.publicPath,
   noInfo: false,
-  headers: {
-    'Access-Control-Allow-Origin': "*",
-    'Access-Control-Allow-Credentials': true,
-  },
 });
 
 app.use(historyApiFallback({ verbose: false }));
