@@ -1,5 +1,12 @@
 {
-  "proxy": {
-    "git": "https://github.com"
+  "api": {
+    "git": {
+      "host": "https://api.github.com",
+      "port": ""
+    },
+    "baidu": {
+      "host": "https://baike.baidu.com/api/openapi",
+      "port": ""
+    }
   }
 }

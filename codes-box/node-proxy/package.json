@@ -9,7 +9,8 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.19.2",
-    "connect-history-api-fallback": "^1.6.0"
+    "connect-history-api-fallback": "^1.6.0",
+    "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
     "@types/axios": "^0.14.0",
@@ -21,6 +22,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "ts-loader": "^6.2.2",
+    "tslint": "^6.1.0",
     "typescript": "^3.8.3",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11",
