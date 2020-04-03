@@ -50,30 +50,30 @@ const reverse = (x:number):number => {
 };
 
 // 解法2
-// const getPow = (base:number, times:number) => {
-//   let result = 1;
-//   for(let i = 0; i < times; i++) {
-//     result = result * base
-//   }
-//   return result;
-// }
+const getPow = (base:number, times:number) => {
+  let result = 1;
+  for(let i = 0; i < times; i++) {
+    result = result * base
+  }
+  return result;
+}
 
-// const reverse = (x:number) => {
-//   const str = x.toString().replace('-', '');
-//   const MIN = getPow(-2, 31);
-//   const MAX = MIN * -1 - 1;
-//   const isNegative = x < 0;
-//   const strArray = str.split('');
-//   let _str = '';
-//   let result = 0;
-//   for(let i = strArray.length - 1; i >= 0; i--) {
-//     _str += strArray[i];
-//     result = isNegative ? +_str * -1 : +_str;
-//     if (result < MIN || result > MAX) {
-//       return 0;
-//     }
-//   }
-//   return result;
-// }
+const reverse2 = (x:number) => {
+  const str = x.toString().replace('-', '');
+  const MIN = getPow(-2, 31);
+  const MAX = MIN * -1 - 1;
+  const isNegative = x < 0;
+  const strArray = str.split('');
+  let _str = '';
+  let result = 0;
+  for(let i = strArray.length - 1; i >= 0; i--) {
+    _str += strArray[i];
+    result = isNegative ? +_str * -1 : +_str;
+    if (result < MIN || result > MAX) {
+      return 0;
+    }
+  }
+  return result;
+}
 // @lc code=end
 
