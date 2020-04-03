@@ -40,6 +40,7 @@
  * 
  */
 
+//  解法1
 const reverse = (x:number):number => {
   const result = +Math.abs(x).toString().split('').reverse().join('');
   if (result >= Math.pow(-2, 31) && result <= (Math.pow(2, 31) - 1)) {
@@ -48,6 +49,7 @@ const reverse = (x:number):number => {
   return 0;
 };
 
+// 解法2
 // const getPow = (base:number, times:number) => {
 //   let result = 1;
 //   for(let i = 0; i < times; i++) {
