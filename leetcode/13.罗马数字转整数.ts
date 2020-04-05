@@ -103,8 +103,8 @@ const romanToInt3 = (s: string) => {
   let canSkip = false;
   for (let i = 0; i < sArr.length; i++) {
     if (!canSkip) {
-      const current = getValue(sArr[i]);
-      const next = getValue(sArr[i + 1])
+      const current = getValue2(sArr[i]);
+      const next = getValue2(sArr[i + 1])
       // 如果是六种特殊情况
       if (current < next) {
         canSkip = true;
