@@ -1,0 +1,16 @@
+# centos7 | node | pnpm
+FROM csighub.tencentyun.com/official/tlinux-2.2-base
+ 
+#MAINTAINER 维护者信息
+MAINTAINER urnotzane
+
+USER root
+  
+#RUN 执行以下命令
+RUN curl -fsSL https://rpm.nodesource.com/setup_16.x | sudo bash - && \
+  sudo yum install -y nodejs && \
+  sudo yum install -y npm && \
+  sudo npm i pnpm -g && \
+  node --version && \
+  npm --version && \
+  pnpm -v
